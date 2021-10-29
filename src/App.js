@@ -57,11 +57,15 @@ function App() {
             render={() => <SaleHorses/>}
           /> */}
 
-          
+          <Route 
+            exact 
+            path="/register" 
+            render={() => <Register/>}
+          />
 
-          <div className='App'>
+          {/* <div className='App'>
             <Register />
-          </div>
+          </div> */}
 
          
           
