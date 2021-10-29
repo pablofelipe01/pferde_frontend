@@ -7,22 +7,23 @@ const Navigation = () => {
   return (
     <Navbar collapseOnSelect variant="light" expand="md">
       <Navbar.Brand as={Link} to="/home">
-        The European Stud Book
+        European Horses
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Nav.Link as={Link} to="/home">
-            Home
+          {/* <Nav.Link as={Link} to="/home">
+            HOME
+          </Nav.Link> */}
+          <Nav.Link as={Link} to="/pferde">
+            STUD BOOK
           </Nav.Link>
-          <Nav.Link as={Link} to="/stud_Book">
-            Stud Book
-          </Nav.Link>
+        
           <Nav.Link as={Link} to="/register">
-            Register
+            REGISTER
           </Nav.Link>
           <Nav.Link as={Link} to="/about">
-            About
+            AUCTION 
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

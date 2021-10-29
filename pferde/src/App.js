@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import data from './data.json';
-import horses from './horses.json'
 import { Switch, Route, Redirect } from 'react-router-dom';
 import CarouselContainer from './CarouselContainer';
 import Navigation from './Navigation';
 import About from './About';
-import StudBook from './StudBook';
-import RegisterForm from './RegisterForm';
+import Pferde from './Pferde';
+import Register from './Register'
 
 function App() {
   const [searchOptions, setSearchOptions] = useState({
@@ -14,7 +13,7 @@ function App() {
     url: 'https://nameless-anchorage-51402.herokuapp.com/pferde/',
     numberOfResults: 50,
   });
-  const [horsesImages, setHorsesImages] = useState(horses)
+  // const [horsesImages, setHorsesImages] = useState(horses)
 
  
 
@@ -38,18 +37,18 @@ function App() {
             render={About} 
           />
 
-          <Route
-            exact 
-            path="/stud_book" 
-            render ={() => <StudBook horses={horses}/>}
-
-          />  
-
           <Route 
             exact 
-            path="/register" 
-            render={RegisterForm} 
+            path="/pferde" 
+            render={() => <Pferde/>}
           />
+
+          
+
+          <div className='App'>
+            <Register />
+          </div>
+          
 
 
 					<Redirect path='*' to='/home' />
