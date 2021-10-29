@@ -6,6 +6,8 @@ import Navigation from './Navigation';
 import About from './About';
 import Pferde from './Pferde';
 import Register from './Register'
+import Video from './Video';
+// import SaleHorses from './SaleHorses';
 
 function App() {
   const [searchOptions, setSearchOptions] = useState({
@@ -34,7 +36,7 @@ function App() {
           <Route 
             exact 
             path="/about" 
-            render={About} 
+            render={() => <About/>}
           />
 
           <Route 
@@ -43,11 +45,25 @@ function App() {
             render={() => <Pferde/>}
           />
 
+          <Route 
+            exact 
+            path="/video" 
+            render={() => <Video/>}
+          />
+
+          {/* <Route 
+            exact 
+            path="/sale" 
+            render={() => <SaleHorses/>}
+          /> */}
+
           
 
           <div className='App'>
             <Register />
           </div>
+
+         
           
 
 

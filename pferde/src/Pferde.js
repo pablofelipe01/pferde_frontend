@@ -3,12 +3,14 @@ import { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { Row } from 'react-bootstrap';
-import Video from './Video';
+
 
 const pferde = 'https://nameless-anchorage-51402.herokuapp.com/pferde/'
 
 function Pferde(props) {
     let [horses, setHorses] = useState ([])
+    
+    
     
     useEffect ((horses) => {
         
@@ -24,6 +26,11 @@ function Pferde(props) {
         })
     },[])
     if(!horses) return null
+
+
+
+
+
     return (
         <Row xs={1} md={3} className="g-4"> 
             {horses.map((horses) => {
@@ -40,7 +47,10 @@ function Pferde(props) {
                       
                       <Button 
                       href={horses.video_url}
-                      variant="primary">Video</Button>  <Button href="https://breeders.zangersheide.auction/en/auction/Eclat-DOr-M-Z-x-" variant="success">Bid</Button>
+                      variant="primary">Video</Button>  
+                      
+                      <Button href="https://bid.flyingeopensales.com/auctions/598df06b-69c5-4447-4e37-08d987db3211" variant="success">Bid</Button>
+                    
                     </Card.Body>
                 
                   </Card>  
@@ -48,10 +58,11 @@ function Pferde(props) {
                 )
             })}
                 
-
         </Row>
-
+      
     );
+
+    
 }
 
 export default Pferde;

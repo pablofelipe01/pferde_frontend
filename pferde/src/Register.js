@@ -6,7 +6,15 @@ import { useHistory } from 'react-router-dom'
 
 
 function Register() {
-    let initialFormState = {username: '', email: '', password: ''}
+    let initialFormState = 
+    {
+        
+            username: "",
+            email: "",
+            password: "",
+            re_password: ""
+        
+    }
     const [values, setValues] = useState (initialFormState)
     let url = 'https://nameless-anchorage-51402.herokuapp.com/users/'
     let history = useHistory ()
@@ -48,10 +56,14 @@ function Register() {
           <label htmlFor="username">Username</label>
 
           <input name= 'email' value={values.email} onChange= {(e) => handleChange(e)} type="email" placeholder="email" id="email" />
-          <label htmlFor="email">Username</label>
+          <label htmlFor="email">email</label>
 
           <input name= 'password'value={values.password} onChange= {(e) => handleChange(e)} type="password" placeholder="Password" id="password" />
           <label htmlFor="password">Password</label>
+
+          <input name= 're_password'value={values.re_password} onChange= {(e) => handleChange(e)} type="password" placeholder="re_Password" id="re_password" />
+          <label htmlFor="re_password">Password</label>
+          <p>Passwords must be minimum 8 characters </p>
 
          
 

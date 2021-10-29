@@ -7,14 +7,14 @@ import Image from 'react-bootstrap/Image';
 const About = () => {
   return (
    
-      <Container>
-        <h1>TERMS AND CONDITIONS FOR AUCTION AT FLYINGE OPEN SALE</h1>
+    <Container>
         <Image
           fluid
           src="https://breeders.zangersheide.auction/userfiles/image.php?src=/userfiles/image/IMG_3788__preg2240.JPG&w=800&h=563&zc=1"
           alt='CELIENHA HK Z, '
           style={{ paddingBottom: '2em' }}
-        />
+          />
+          <h1>TERMS AND CONDITIOßNS FOR AUCTION AT FLYINGE OPEN SALE</h1>
         <p>
         These auction terms apply to the online auction Flyinge Open Sales 2021 organized by PS Flyinge & Partners AB ( auctioneer ), corporate identity number 556880-0311, at Qvarnhem, Sjöbo municipality, Saturday 30 October 2021. Auction participants (such as bidders and buyers) and through their participation in the auction, the seller accepts the application of these Auction Terms, and that the Auction Terms shall apply as contract terms when buying a horse at the auction.
         </p>

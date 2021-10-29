@@ -25,6 +25,16 @@ const Navigation = () => {
           <Nav.Link as={Link} to="/about">
             AUCTION 
           </Nav.Link>
+
+
+
+          {/* <Nav.Link as={Link} to="/SALE">
+            SALE
+          </Nav.Link> */}
+
+
+
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>
